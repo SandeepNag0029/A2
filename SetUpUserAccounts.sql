@@ -13,7 +13,7 @@ DROP TABLE IF EXISTS `audit`;
 
 CREATE TABLE `audit` (
   `session_id` int(100)unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `login_datetime` datetime NOT NULL,
+  `login_datetime` datetime DEFAULT NULL,
   `logout_datetime` datetime DEFAULT NULL,
   `username` varchar(100) NOT NULL
 );
@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `audit`;
 
 CREATE TABLE `audit` (
   `session_id` int(100)unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `login_datetime` datetime NOT NULL,
+  `login_datetime` datetime DEFAULT NULL,
   `logout_datetime` datetime DEFAULT NULL,
   `username` varchar(100) NOT NULL
 );
@@ -33,7 +33,7 @@ DROP TABLE IF EXISTS `audit`;
 
 CREATE TABLE `audit` (
   `session_id` int(100)unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `login_datetime` datetime NOT NULL,
+  `login_datetime` datetime DEFAULT NULL,
   `logout_datetime` datetime DEFAULT NULL,
   `username` varchar(100) NOT NULL
 );
