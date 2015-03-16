@@ -13,7 +13,7 @@ import java.sql.ResultSet;
  *
  * This class defines a GUI application that allows inventory to be added to the
  * inventory databases. There are tree tables in the inventory database: trees,
- * shrubs, and seeds.
+ * shrubs, and seeds.s
  *
  ******************************************************************************/
 /*
@@ -30,6 +30,7 @@ public class InventoryFrame extends javax.swing.JFrame {
 
        String versionID = "v2.10.10";
        String userName;
+       String password;
 
     /** Creates new form AddInventoryMainFrame */
     public InventoryFrame() {
@@ -37,8 +38,9 @@ public class InventoryFrame extends javax.swing.JFrame {
         jLabel1.setText("Inventory Management Application " + versionID);
     }
 
-    public InventoryFrame(String userName) {
+    public InventoryFrame(String userName, String password) {
         this.userName=userName;
+        this.password=password;
         initComponents();
         jLabel1.setText("Inventory Management Application " + versionID);
     }

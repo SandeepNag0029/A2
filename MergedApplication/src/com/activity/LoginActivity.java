@@ -11,12 +11,14 @@ package com.activity;
  * @author sdadi
  */
 public class LoginActivity extends javax.swing.JFrame {
-   String userName;
+    String userName;
+    String password;
     /**
      * Creates new form LoginActivity
      */
     public LoginActivity(String userName) {
         this.userName=userName;
+        this.password=password;
         initComponents();
         //Query the database and get the user activities 
         //Set the activities in the text area for display.

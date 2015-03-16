@@ -25,13 +25,15 @@ public class NewJFrame extends javax.swing.JFrame {
 
     String versionID = "v2.10.10";
     String userName;
+    String password;
     /** Creates new form NewJFrame */
     public NewJFrame() {
         initComponents();
         jLabel1.setText("Order Management Application " + versionID);
     }
-    public NewJFrame(String userName) {
+    public NewJFrame(String userName, String password) {
         this.userName=userName;
+	this.password=password;
         initComponents();
         jLabel1.setText("Order Management Application " + versionID);
     }
@@ -406,7 +408,7 @@ public class NewJFrame extends javax.swing.JFrame {
             //and the password is "remote_pass" - you will have to set this
             //account up in your database
 
-            DBConn = DriverManager.getConnection(sourceURL,"remote","remote_pass");
+            DBConn = DriverManager.getConnection(sourceURL,userName,password);
 
         } catch (Exception e) {
 

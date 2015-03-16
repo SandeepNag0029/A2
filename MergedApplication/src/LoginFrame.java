@@ -174,19 +174,19 @@ public class LoginFrame extends javax.swing.JFrame {
                 recordLogin();
                 this.dispose();
                 if(operation.equalsIgnoreCase("inventory")){
-                    new InventoryFrame(userName).show();
+                    new InventoryFrame(userName, password).show();
                     this.dispose();
                 }
                 else if(operation.equalsIgnoreCase("Orders App")){
-                new com.orders.NewJFrame(userName).show();
+                new com.orders.NewJFrame(userName, password).show();
                 this.dispose();
                 }
                 else if(operation.equalsIgnoreCase("Shipping Application")){
-                new com.shipping.NewJFrame(userName).show();
+                new com.shipping.NewJFrame(userName, password).show();
                 this.dispose();
                 }
                 else{
-                    new com.activity.LoginActivity(userName).show();
+                    new com.activity.LoginActivity(userName, password).show();
                     this.dispose();
                 }
             } catch (SQLException ex) {

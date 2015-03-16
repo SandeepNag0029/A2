@@ -24,6 +24,7 @@ public class NewJFrame extends javax.swing.JFrame {
     Integer updateOrderID;
     String versionID = "v2.10.10";
     String userName;
+    String password;
     /** Creates new form NewJFrame */
     public NewJFrame() {
         initComponents();
@@ -31,6 +32,7 @@ public class NewJFrame extends javax.swing.JFrame {
     }
     public NewJFrame(String userName) {
         this.userName=userName;
+	this.password=password;
         initComponents();
         jLabel1.setText("Shipping Application " + versionID);
     }
@@ -391,7 +393,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 //create a connection to the db - note the default account is "remote"
                 //and the password is "remote_pass" - you will have to set this
                 //account up in your database
-                DBConn = DriverManager.getConnection(sourceURL,"remote","remote_pass");
+                DBConn = DriverManager.getConnection(sourceURL,userName,password);
 
             } catch (Exception e) {
 
