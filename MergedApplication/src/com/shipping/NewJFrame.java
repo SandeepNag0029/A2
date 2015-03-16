@@ -30,7 +30,7 @@ public class NewJFrame extends javax.swing.JFrame {
         initComponents();
         jLabel1.setText("Shipping Application " + versionID);
     }
-    public NewJFrame(String userName) {
+    public NewJFrame(String userName, String password) {
         this.userName=userName;
 	this.password=password;
         initComponents();

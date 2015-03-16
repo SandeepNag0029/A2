@@ -16,7 +16,7 @@ public class LoginActivity extends javax.swing.JFrame {
     /**
      * Creates new form LoginActivity
      */
-    public LoginActivity(String userName) {
+    public LoginActivity(String userName, String password) {
         this.userName=userName;
         this.password=password;
         initComponents();
@@ -125,7 +125,7 @@ public class LoginActivity extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LoginActivity("Rainbow").setVisible(true);
+                new LoginActivity("Rainbow", "Rainbow").setVisible(true);
             }
         });
     }

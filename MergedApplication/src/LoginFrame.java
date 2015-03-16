@@ -178,12 +178,12 @@ public class LoginFrame extends javax.swing.JFrame {
                     this.dispose();
                 }
                 else if(operation.equalsIgnoreCase("Orders App")){
-                new com.orders.NewJFrame(userName, password).show();
-                this.dispose();
+                    new com.orders.NewJFrame(userName, password).show();
+                    this.dispose();
                 }
                 else if(operation.equalsIgnoreCase("Shipping Application")){
-                new com.shipping.NewJFrame(userName, password).show();
-                this.dispose();
+                    new com.shipping.NewJFrame(userName, password).show();
+                    this.dispose();
                 }
                 else{
                     new com.activity.LoginActivity(userName, password).show();
