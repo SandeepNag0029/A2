@@ -404,8 +404,8 @@ public class NewJFrame extends javax.swing.JFrame {
             msgString = ">> Establishing connection with: " + sourceURL + "...";
             jTextArea1.append("\n"+msgString);
 
-            //create a connection to the db - note the default account is "remote"
-            //and the password is "remote_pass" - you will have to set this
+            //create a connection to the db - note the default account is userName
+            //and the password is password - you will have to set this
             //account up in your database
 
             DBConn = DriverManager.getConnection(sourceURL,userName,password);
@@ -592,11 +592,11 @@ public class NewJFrame extends javax.swing.JFrame {
                 msgString = ">> Establishing connection with: " + sourceURL + "...";
                 jTextArea3.append("\n"+msgString);
 
-                //create a connection to the db - note the default account is "remote"
-                //and the password is "remote_pass" - you will have to set this
+                //create a connection to the db - note the default account is userName
+                //and the password is password - you will have to set this
                 //account up in your database
 
-                DBConn = DriverManager.getConnection(sourceURL,"remote","remote_pass");
+                DBConn = DriverManager.getConnection(sourceURL,userName,password);
 
             } catch (Exception e) {
 
@@ -811,11 +811,11 @@ public class NewJFrame extends javax.swing.JFrame {
             msgString = ">> Establishing connection with: " + sourceURL + "...";
             jTextArea1.append("\n"+msgString);
 
-            //create a connection to the db - note the default account is "remote"
-            //and the password is "remote_pass" - you will have to set this
+            //create a connection to the db - note the default account is userName
+            //and the password is password - you will have to set this
             //account up in your database
 
-            DBConn = DriverManager.getConnection(sourceURL,"remote","remote_pass");
+            DBConn = DriverManager.getConnection(sourceURL,userName,password);
 
         } catch (Exception e) {
 
@@ -889,11 +889,11 @@ public class NewJFrame extends javax.swing.JFrame {
             msgString = ">> Establishing connection with: " + sourceURL + "...";
             jTextArea1.append("\n"+msgString);
 
-            //create a connection to the db - note the default account is "remote"
-            //and the password is "remote_pass" - you will have to set this
+            //create a connection to the db - note the default account is userName
+            //and the password is password - you will have to set this
             //account up in your database
 
-            DBConn = DriverManager.getConnection(sourceURL,"remote","remote_pass");
+            DBConn = DriverManager.getConnection(sourceURL,userName,password);
 
         } catch (Exception e) {
 
@@ -983,11 +983,11 @@ public class NewJFrame extends javax.swing.JFrame {
             msgString = ">> Establishing connection with: " + sourceURL + "...";
             jTextArea1.append("\n"+msgString);
 
-            //create a connection to the db - note the default account is "remote"
-            //and the password is "remote_pass" - you will have to set this
+            //create a connection to the db - note the default account is userName
+            //and the password is password - you will have to set this
             //account up in your database
 
-            DBConn = DriverManager.getConnection(sourceURL,"remote","remote_pass");
+            DBConn = DriverManager.getConnection(sourceURL,userName,password);
 
         } catch (Exception e) {
 
@@ -1064,11 +1064,11 @@ public class NewJFrame extends javax.swing.JFrame {
             msgString = ">> Establishing connection with: " + sourceURL + "...";
             jTextArea1.append("\n"+msgString);
 
-            //create a connection to the db - note the default account is "remote"
-            //and the password is "remote_pass" - you will have to set this
+            //create a connection to the db - note the default account is userName
+            //and the password is password - you will have to set this
             //account up in your database
 
-            DBConn = DriverManager.getConnection(sourceURL,"remote","remote_pass");
+            DBConn = DriverManager.getConnection(sourceURL,userName,password);
 
         } catch (Exception e) {
 
@@ -1145,11 +1145,11 @@ public class NewJFrame extends javax.swing.JFrame {
             msgString = ">> Establishing connection with: " + sourceURL + "...";
             jTextArea1.append("\n"+msgString);
 
-            //create a connection to the db - note the default account is "remote"
-            //and the password is "remote_pass" - you will have to set this
+            //create a connection to the db - note the default account is userName
+            //and the password is password - you will have to set this
             //account up in your database
 
-            DBConn = DriverManager.getConnection(sourceURL,"remote","remote_pass");
+            DBConn = DriverManager.getConnection(sourceURL,userName,password);
 
         } catch (Exception e) {
 
@@ -1226,11 +1226,11 @@ public class NewJFrame extends javax.swing.JFrame {
             msgString = ">> Establishing connection with: " + sourceURL + "...";
             jTextArea1.append("\n"+msgString);
 
-            //create a connection to the db - note the default account is "remote"
-            //and the password is "remote_pass" - you will have to set this
+            //create a connection to the db - note the default account is userName
+            //and the password is password - you will have to set this
             //account up in your database
 
-            DBConn = DriverManager.getConnection(sourceURL,"remote","remote_pass");
+            DBConn = DriverManager.getConnection(sourceURL,userName,password);
 
         } catch (Exception e) {
 
