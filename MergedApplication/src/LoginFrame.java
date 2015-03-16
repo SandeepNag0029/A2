@@ -191,8 +191,11 @@ public class LoginFrame extends javax.swing.JFrame {
                 }
             } catch (SQLException ex) {
                 Logger.getLogger(LoginFrame.class.getName()).log(Level.SEVERE, null, ex);
-				
-                JOptionPane.showMessageDialog(this,"Invalid username or password combination.","Invalid Credentials",JOptionPane.ERROR_MESSAGE);
+                int errorCode=ex.getErrorCode();
+	        if (errorCode==1045)
+                JOptionPane.showMessageDialog(this,"Invalid username or password combination.","Invalid Credentials. Error Code:"+errorCode,JOptionPane.ERROR_MESSAGE);
+                else
+                JOptionPane.showMessageDialog(this,"Invalid username or password combination.","Service Unavailable. Error Code:"+errorCode,JOptionPane.ERROR_MESSAGE);    
             }
         //}
     }//GEN-LAST:event_submitButtonActionPerformed
