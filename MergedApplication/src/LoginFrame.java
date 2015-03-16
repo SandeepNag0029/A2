@@ -64,10 +64,10 @@ public class LoginFrame extends javax.swing.JFrame {
         setTitle("Login");
 
         userNameLabel.setBackground(new java.awt.Color(153, 153, 153));
-        userNameLabel.setText("Username :");
+        userNameLabel.setText("Username:");
 
         passwordLabel.setBackground(new java.awt.Color(153, 153, 153));
-        passwordLabel.setText("Password :");
+        passwordLabel.setText("Password:");
 
         userNameText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,9 +75,9 @@ public class LoginFrame extends javax.swing.JFrame {
             }
         });
 
-        operationLabel.setText("Operation :");
+        operationLabel.setText("Select Interface:");
 
-        operationSelect.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Inventory", "Orders App", "Shipping Application", "Login Activity" }));
+        operationSelect.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Inventory", "Orders", "Shipping", "Login Auditing" }));
 
         submitButton.setText("Submit");
         submitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -191,7 +191,8 @@ public class LoginFrame extends javax.swing.JFrame {
                 }
             } catch (SQLException ex) {
                 Logger.getLogger(LoginFrame.class.getName()).log(Level.SEVERE, null, ex);
-                JOptionPane.showMessageDialog(this,"Username or Password is wrong","Invalid Credentials",JOptionPane.ERROR_MESSAGE);
+				
+                JOptionPane.showMessageDialog(this,"Invalid username or password combination.","Invalid Credentials",JOptionPane.ERROR_MESSAGE);
             }
         //}
     }//GEN-LAST:event_submitButtonActionPerformed
